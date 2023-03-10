@@ -1,0 +1,11 @@
+{
+    "middleware": {
+        "json": true,
+        "url-encoded": {
+            "value": true,
+            "options": {
+                "extended": true
+            }
+        }
+    }
+}
