@@ -1,11 +1,12 @@
 import { Router } from "express";
+import { debugMiddleware } from "../../lib/misc.js";
+
+
 
 const apiRouter = Router()
 
 apiRouter.route('/')
-    .get((req, res) => {
-        res.json({msg: "api is working"})
-    })
+    .get(debugMiddleware)
     .post((req, res) => {
         res.json({
             msg: "post is working",
